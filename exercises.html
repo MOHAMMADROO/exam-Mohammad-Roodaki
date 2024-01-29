@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercises</title>
+    <script src="script2.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <span>Go to the main page :</span>
+    <a href="index.html" class="bottom-link">Main Page</a>
+    <main>
+        <section id="section1">
+            <h2>First names and Surnames</h2>
+            <p>Here you can see two seperate groups.By clicking on the button below, the whole name will be appear:</p>
+            <div>first names : John , Jane and Joe</div>
+            <div>Surnames : Doe , Roe and Smith</div>
+            <form action="wholeNmae" method="post">
+                <button type="button" class="buttonPro" id="nameButton">Click</button>
+                <br>
+                <span>Full names :</span>
+                <input type="text" class="samePro yad" id="name1" name="name1" placeholder="Full Names" disabled>
+            </form>
+        </section>
+        <section id="section2">
+            <h2>The highest , the lowest and the average temperatue</h2>
+            <p>Here there are 10 different temperatues. By clicking on the button below, you can see the highest , the lowest and the average temperatue :</p>
+            <div>Temperatues : 25.5 , 30.2 , 28.8 , 22.1 , 26.7 , 24.3 , 29.6 , 31 , 23.5 , 27.9</div>
+            <form action="temperature" method="post">
+                <button type="button" class="buttonPro" id="temperature">Click</button>
+                <br>
+                <span>Maximum :</span>
+                <input type="number" id="maxTemp" class="samePro" name="maxTemp" placeholder="The highest" disabled>
+                <br>
+                <span>Minimum :</span>
+                <input type="number" id="minTemp" class="samePro" name="minTemp" placeholder="The lowest" disabled>
+                <br>
+                <span>Average :</span>
+                <input type="number" id="aveTemp" class="samePro" name="aveTemp" placeholder="The average" disabled>
+            </form>
+        </section>
+        <section id="section3">
+            <h2>The name of adult people :</h2>
+            <p>Here there are some names and their age. By clicking on the button below, you can see adult person's name (with age 18 or older) :</p>
+            <table>
+                <tr>
+                    <th>Row</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Alice</td>
+                    <td>25</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Bob</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Charlie</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Daniel</td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Eve</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Frank</td>
+                    <td>55</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Gabriel</td>
+                    <td>10</td>
+                </tr>
+            </table>
+            <form action="adult" method="post">
+                <button type="button" class="buttonPro" id="adult">Click</button>
+                <br>
+                <span>Adult's names :</span>
+                <input type="text" name="adult1" class="samePro" id="adult1" placeholder="Adult's names" disabled>
+                <br>
+            </form>
+        </section>
+        <section id="section4">
+            <h2>Please type the temperatue in celsius in the first box, and then click on the button to see the converted temperatue in fahrenheit :</h2>
+            <div>The formula of conerting is :</div>
+            <blockquote>c = (f-32)/1.8</blockquote>
+            <form action="convertor" method="post">
+                <label>Celsius :
+                    <input type="number" name="temp1" id="celsius" placeholder="Celsius Temperature" required>
+                </label>
+                <br>
+                <button type="button" class="buttonPro" id="tempconvert">Click</button>
+                <br>
+                <span>Fahrenheit :
+                <input type="number" name="fahrenheit" class="samePro" id="fahrenheit" placeholder="Fahrenheit Temperature" disabled>
+                </span>
+            </form>
+        </section>
+        <section id="section5">
+            <h2>Sandwich making:</h2>
+            <p>For making a sandwich , there are 3 rules as below :</p>
+            <p>1 : Each sandwich needs <mark>at least</mark> one kind of meat (beef , chicken or turkey).</p>
+            <p>2 : A sandwich has <mark> either beef or chicken</mark>, <em>but not both at the same time</em>.</p>
+            <p>3 : If the sandwich has <em>turkey</em>, it should has <mark>cheese</mark> as well.</p>
+            <h3>Please use <mark>1</mark> for ingredients that you <em>want</em> or <mark>0</mark> for those that you <em>do not want</em>. Then click on the button to see whether you are allowed to make the sandwich or not :  </h3>
+            <form action="sandwich" method="post">
+                <label>
+                    Beef :
+                    <input type="number" name="beef" id="beef" placeholder="Beef" required>
+                </label>
+                <br>
+                <label>
+                    Chicken :
+                    <input type="number" name="chicken" id="chicken" placeholder="Chicken" required>
+                </label><br>
+                <label>
+                    Turkey :
+                    <input type="number" name="turkey" id="turkey" placeholder="Turkey" required>
+                </label>
+                <br>
+                <label>
+                    Cheese :
+                    <input type="number" name="cheese" id="cheese" placeholder="Cheese" required>
+                </label>
+                <br>
+                <button type="button" class="buttonPro" id="sandwich">Click</button>
+                <br>
+                <span>Allowance situation : </span>
+                <input type="text" name="sandwich" class="samePro" id="sandwichResult" placeholder="The allowance situation" disabled>
+            </form>
+
+        </section>
+        
+
+    </main>
+
+    
+</body>
+</html>

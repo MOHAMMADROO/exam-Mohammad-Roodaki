@@ -1,0 +1,100 @@
+.samePro{
+    color: red;
+    height: 25px;
+    font-weight: bold;
+    text-align: center;
+    width: 70%;
+    font-size: 12px;
+
+}
+
+#section1{
+    border: 1px solid rgb(115, 117, 228);
+    background-color: rgb(92, 92, 243);
+    margin: 7px;
+    padding: 8px;
+    text-align: center;
+}
+
+.buttonPro{
+    width: 100%;
+
+}
+
+.buttonPro:hover{
+    background-color: rgba(234, 13, 13, 0.893);
+}
+
+#section2{
+    border: 1px solid black;
+    color: white;
+    background-color: rgb(58, 55, 55);
+    margin: 7px;
+    padding: 8px;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+#section3{
+    border: 1px solid antiquewhite;
+    background-color: antiquewhite;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin:7px;
+}
+
+#section4{
+    border: 1px solid antiquewhite;
+    background-color: rgb(75, 255, 255);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin:7px;
+
+}
+
+#section5{
+    border: 1px solid antiquewhite;
+    background-color: rgb(249, 126, 228);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    margin:7px;
+
+}
+table{
+    border: 1px dashed black;
+    border-collapse: collapse;
+    padding: 7px;
+    margin: 0 auto;
+    tr:nth-child(odd){background-color: #f55151;}
+    width: 60vw;
+    margin-bottom: 7px;
+    
+    
+}
+
+
+td{
+    border: 1px dashed black;
+    
+}
+th{
+    border: 1px dashed black;
+}
+.bottom-link:hover{
+    color: rgb(238, 69, 69);
+}
+.bottom-link{
+    border: 1px solid;
+    background-color:white;
+    border-width: 6px;
+    color: black;
+}
